@@ -97,3 +97,17 @@ void SinglyLinkedList::mergeSortedList(
 
     other.p = NULL;
 }
+
+void SinglyLinkedList::display() {
+
+    Node *temp = p;
+
+    while (temp != NULL) {
+
+        cout << temp->data << " -> ";
+
+        temp = temp->next;
+    }
+
+    cout << "NULL" << endl;
+}
