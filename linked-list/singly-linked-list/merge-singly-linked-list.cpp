@@ -112,3 +112,42 @@ void SinglyLinkedList::display() {
     cout << "NULL" << endl;
 }
 
+int main() {
+
+    SinglyLinkedList list1;
+    SinglyLinkedList list2;
+
+    int n1;
+    int n2;
+
+    cout << "Enter number of nodes in List 1: ";
+    cin >> n1;
+
+    cout << "\nEnter sorted values for List 1:" << endl;
+
+    for (int i = 0; i < n1; i++) {
+        list1.insertAtEnd();
+    }
+
+    cout << "\nEnter number of nodes in List 2: ";
+    cin >> n2;
+
+    cout << "\nEnter sorted values for List 2:" << endl;
+
+    for (int i = 0; i < n2; i++) {
+        list2.insertAtEnd();
+    }
+
+    cout << "\nList 1:" << endl;
+    list1.display();
+
+    cout << "\nList 2:" << endl;
+    list2.display();
+
+    list1.mergeSortedList(list2);
+
+    cout << "\nMerged List:" << endl;
+    list1.display();
+
+    return 0;
+}
