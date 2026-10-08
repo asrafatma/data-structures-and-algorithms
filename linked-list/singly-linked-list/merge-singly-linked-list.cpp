@@ -1,24 +1,27 @@
 #include <iostream>
 using namespace std;
 
+//LinkedList class
 class SinglyLinkedList {
     struct Node {
 
         int data;
         Node *next;
 
-    } *p;
+    } *p; //p->head pointer
 
 public:
 
     SinglyLinkedList() {
         p = NULL;
     }
-
+    
+    //method prototypes
     void insertAtEnd();
     void mergeSortedList(SinglyLinkedList &other);
     void display();
 };
+
 
 void SinglyLinkedList::insertAtEnd() {
 
