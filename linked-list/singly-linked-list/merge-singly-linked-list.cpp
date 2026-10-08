@@ -101,6 +101,7 @@ void SinglyLinkedList::mergeSortedList(
     other.p = NULL;
 }
 
+//display method 
 void SinglyLinkedList::display() {
 
     Node *temp = p;
