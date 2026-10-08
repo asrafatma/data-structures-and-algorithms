@@ -22,7 +22,7 @@ public:
     void display();
 };
 
-
+//insert at end method
 void SinglyLinkedList::insertAtEnd() {
 
     int x;
@@ -51,6 +51,7 @@ void SinglyLinkedList::insertAtEnd() {
     }
 }
 
+//method to merge sorted list
 void SinglyLinkedList::mergeSortedList(
     SinglyLinkedList &other) {
 
