@@ -8,6 +8,7 @@ class CircularLinkedList {
     }*head;
 
 public:
+// Function prototype to insert a new node at the end of the circular linked list
     void insertAtEnd(int val);
     void display();
 
