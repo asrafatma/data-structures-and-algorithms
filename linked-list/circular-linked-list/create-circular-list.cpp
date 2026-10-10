@@ -16,6 +16,26 @@ public:
     }
 };
 
+void CircularLinkedList::insertAtEnd(int val) {
+    Node *newNode = new Node();
+    newNode->data = val;
+    newNode->next = newNode;
+
+    if (head == NULL) {
+        head = newNode;
+    }
+    else {
+        Node *temp = head;
+
+        while (temp->next != head) {
+            temp = temp->next;
+        }
+
+        temp->next = newNode;
+        newNode->next = head;
+    }
+} 
+
 int main(){
     return 0;
 }
