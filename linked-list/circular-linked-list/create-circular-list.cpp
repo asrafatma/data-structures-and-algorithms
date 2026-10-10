@@ -36,6 +36,18 @@ void CircularLinkedList::insertAtEnd(int val) {
     }
 } 
 
+void CircularLinkedList::display() {
+    if (head == NULL)
+        return;
+
+    Node *temp = head;
+
+    do {
+        cout << temp->data << " ";
+        temp = temp->next;
+    } while (temp != head);
+}
+
 int main(){
     return 0;
 }
