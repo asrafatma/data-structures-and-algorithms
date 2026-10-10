@@ -1,25 +1,28 @@
 #include <iostream>
 using namespace std;
 
+//LinkedList class
 class SinglyLinkedList {
     struct Node {
 
         int data;
         Node *next;
 
-    } *p;
+    } *p; //p->head pointer
 
 public:
 
     SinglyLinkedList() {
         p = NULL;
     }
-
+    
+    //method prototypes
     void insertAtEnd();
     void mergeSortedList(SinglyLinkedList &other);
     void display();
 };
 
+//insert at end method
 void SinglyLinkedList::insertAtEnd() {
 
     int x;
@@ -48,6 +51,7 @@ void SinglyLinkedList::insertAtEnd() {
     }
 }
 
+//method to merge sorted list
 void SinglyLinkedList::mergeSortedList(
     SinglyLinkedList &other) {
 
@@ -98,6 +102,7 @@ void SinglyLinkedList::mergeSortedList(
     other.p = NULL;
 }
 
+//display method 
 void SinglyLinkedList::display() {
 
     Node *temp = p;
