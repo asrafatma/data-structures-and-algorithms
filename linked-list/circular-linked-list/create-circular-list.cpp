@@ -7,7 +7,13 @@ class CircularLinkedList {
         Node *next;
     }*head;
 
+public:
+    void insertAtEnd(int val);
+    void display();
 
+    CircularLinkedList() {
+        head = NULL;
+    }
 };
 
 int main(){
