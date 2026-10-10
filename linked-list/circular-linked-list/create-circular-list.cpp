@@ -49,5 +49,10 @@ void CircularLinkedList::display() {
 }
 
 int main(){
+    CircularLinkedList list;
+    list.insertAtEnd(10);
+    list.insertAtEnd(20);
+    list.insertAtEnd(30);
+    list.display();
     return 0;
 }
