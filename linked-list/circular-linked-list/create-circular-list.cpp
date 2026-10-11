@@ -51,6 +51,7 @@ void CircularLinkedList::display() {
     } while (temp != head);
 }
 
+// Main function to demonstrate the circular linked list operations
 int main(){
     CircularLinkedList list;
     list.insertAtEnd(10);
