@@ -17,6 +17,7 @@ public:
     }
 };
 
+// Function to insert a new node at the end of the circular linked list
 void CircularLinkedList::insertAtEnd(int val) {
     Node *newNode = new Node();
     newNode->data = val;
