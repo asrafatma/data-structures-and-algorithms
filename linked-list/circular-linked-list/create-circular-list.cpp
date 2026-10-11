@@ -38,6 +38,7 @@ void CircularLinkedList::insertAtEnd(int val) {
     }
 } 
 
+// Function to display the circular linked list
 void CircularLinkedList::display() {
     if (head == NULL)
         return;
