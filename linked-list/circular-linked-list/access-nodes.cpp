@@ -37,3 +37,21 @@ void CircularLinkedList::AccessNode(int value){
 
 }
 
+void CircularLinkedList::display() {
+    if (head == NULL)
+        return;
+
+    Node *temp = head;
+
+    do {
+        cout << temp->data << " ";
+        temp = temp->next;
+    } while (temp != head);
+}
+
+int main() {
+    CircularLinkedList list;
+    list.AccessNode(1);
+    list.display();
+    return 0;
+}
